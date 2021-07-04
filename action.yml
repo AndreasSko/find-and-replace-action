@@ -1,0 +1,24 @@
+name: Find and Replace
+author: Andreas Skorczyk
+description: Finds and replaces strings in files
+inputs:
+  from: 
+    description: String/Regex to look for
+    required: true
+  to:
+    description: String to replace it with
+    required: true
+  regex:
+    description: Wheter to interpret `from` as regex or not. Enabled by default. If disabled, only the first occurence will be replaced.
+    required: false
+    default: "true"
+  files:
+    description: Files to look into, split by newline. Supports glob. Defaults to all files
+    required: false
+    default: "**"
+outputs:
+  result: 
+    description: Array of replacement results. 
+runs:
+  using: node12
+  main: index.js

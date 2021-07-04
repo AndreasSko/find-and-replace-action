@@ -1,0 +1,25 @@
+{
+  "name": "find-and-replace-action",
+  "version": "1.0.0",
+  "description": "GitHub Action for replacing strings in files, written in Javascript for non-linux support",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreasSko/find-and-replace-action.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndreasSko/find-and-replace-action/issues"
+  },
+  "homepage": "https://github.com/AndreasSko/find-and-replace-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.4.0",
+    "@actions/github": "^5.0.0",
+    "replace-in-file": "^6.2.0"
+  }
+}
